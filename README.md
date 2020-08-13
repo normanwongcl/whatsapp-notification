@@ -1,11 +1,13 @@
 ## Tools used
 
+```
 Node.js: 12.18.0
 npm: 6.14.4
 Framework Core: 1.78.1
 Plugin: 3.7.0
 SDK: 2.3.1
 Components: 2.34.1
+```
 
 ## Install
 
