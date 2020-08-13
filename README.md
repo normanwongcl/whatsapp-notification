@@ -1,13 +1,28 @@
-## Prerequisites
+## Tools used
 
-Please make sure you have Nodejs installed. You can get it [here](https://nodejs.org/en/).
+Node.js: 12.18.0
+npm: 6.14.4
+Framework Core: 1.78.1
+Plugin: 3.7.0
+SDK: 2.3.1
+Components: 2.34.1
 
 ## Install
 
 ```bash
-
 # If you don't already have the serverless cli installed, do that
 npm install -g serverless
+
+
+# Install aws cli v2
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo unzip awscliv2.zip
+sudo ./aws/install
+rm -rf aws awscliv2.zip
+
+# Set up your aws cli
+aws configure
+
 # Clone this repo
 git clone git@github.com:normanwongcl/whatsapp-notification.git
 
@@ -46,4 +61,13 @@ Test function is working
 
 ```bash
 serverless invoke --function hello
+```
+
+Expected output:
+
+```bash
+{
+    "statusCode": 200,
+    "body": "{\"message\":\"Go Serverless v1.0! Your function executed successfully!\",\"input\":{}}"
+}
 ```
