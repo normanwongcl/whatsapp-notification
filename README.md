@@ -3,10 +3,11 @@
 ```
 Node.js: 12.18.0
 npm: 6.14.4
-Framework Core: 1.78.1
-Plugin: 3.7.0
-SDK: 2.3.1
-Components: 2.34.1
+Serverless Framework:
+    Core:1.78.1
+    Plugin: 3.7.0
+    SDK: 2.3.1
+    Components: 2.34.1
 ```
 
 ## Install
@@ -14,7 +15,6 @@ Components: 2.34.1
 ```bash
 # If you don't already have the serverless cli installed, do that
 npm install -g serverless
-
 
 # Install aws cli v2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
